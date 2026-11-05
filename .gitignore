@@ -1,0 +1,15 @@
+# Python environment
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Local Swytchcode workspace
+.swytchcode/workspace.json
+
+# Swytchcode temporary lock files
+.swytchcode/**/*.lock
