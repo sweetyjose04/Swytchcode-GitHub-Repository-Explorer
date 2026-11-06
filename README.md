@@ -186,24 +186,22 @@ python app.py
 
 ```text
 
-Swytchcode-PPI/
-
+Swytchcode-GitHub-Repository-Explorer/
+│
 ├── .swytchcode/
-
-│   ├── integrations/
-
-│   │   └── GitHub/
-
-│   └── tooling.json
-
-├── venv/
-
+│   ├── tooling.json
+│   └── integrations/
+│       ├── manifest.json
+│       └── GitHub/
+│           └── github/
+│               └── 1.1.4/
+│                   ├── methods.json
+│                   └── wrekenfile.yaml
+│
 ├── app.py
-
 ├── README.md
-
-└── Wrekenfile
-
+├── friction-diary.md
+└── .gitignore
 ```
 
 
@@ -226,3 +224,31 @@ This project demonstrates how Swytchcode can simplify API integration and execut
 
 AI assistance was used for understanding CLI commands, troubleshooting configuration and execution errors, and developing the Python demonstration. All commands and application behavior were tested locally.
 
+
+## What is Swytchcode?
+
+Swytchcode is a CLI-based tool that helps developers
+integrate and execute external API operations through
+a standardized workflow.
+
+It provides integration bundles, predefined methods,
+authentication management, and commands to execute API
+operations. Instead of manually implementing every API
+request, developers can explore available integrations,
+inspect methods, configure authentication, and execute
+operations using the CLI.
+
+For this project, I used Swytchcode to integrate the
+GitHub REST API. I installed the GitHub integration,
+connected my GitHub account using OAuth, and executed
+the `github.repo.get` method to retrieve repositories
+belonging to an organization.
+
+I then developed a Python-based GitHub Repository
+Explorer that uses the Swytchcode CLI to retrieve and
+display repository names, descriptions, programming
+languages, stars, forks, and URLs.
+
+Swytchcode simplifies API integration workflows and
+helps developers build practical applications using
+existing API operations.
